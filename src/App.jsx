@@ -1,7 +1,14 @@
+import { BrowserRouter, Routes ,Route} from "react-router-dom";
+import Frontpage from "./pages/Frontpage";
+
 export default function App() {
   return (
-    <h1 className="text-3xl font-bold underline">
-        Too Fast!!
-    </h1>
+        <div className="bg-gray-900 text-white h-screen">
+          <BrowserRouter>
+            <Routes>
+              <Route path="/" element={<Frontpage/>}/>
+            </Routes>
+          </BrowserRouter>
+          </div>
   )
 }
